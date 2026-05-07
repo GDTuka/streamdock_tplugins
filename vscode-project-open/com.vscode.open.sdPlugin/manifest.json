@@ -1,0 +1,48 @@
+{
+  "Actions": [
+    {
+      "UUID": "com.vscode.open.run",
+      "Icon": "static/img/App-logo.png",
+      "state": 0,
+      "States": [
+        {
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "Image": "static/img/App-logo.png",
+          "Title": "Open"
+        },
+        {
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "Image": "static/img/icon.png",
+          "Title": "ERR"
+        }
+      ],
+      "Settings": {
+        "path": ""
+      },
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": false,
+      "Controllers": ["Keypad"],
+      "Name": "Open Project",
+      "Tooltip": "Open VS Code on the configured project path",
+      "PropertyInspectorPath": "./propertyInspector/run/index.html"
+    }
+  ],
+  "Version": "0.1.0",
+  "Name": "VSCode Open Project",
+  "Icon": "static/img/App-logo.png",
+  "CategoryIcon": "static/img/App-logo.png",
+  "Category": "Dev Tools",
+  "Description": "One-tap launch of VS Code on a per-key configured project path.",
+  "CodePath": "VSCodeOpen.exe",
+  "SDKVersion": 1,
+  "Author": "Tuka",
+  "URL": "",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ]
+}

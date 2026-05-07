@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>VSCode Cmd Commands — Property Inspector</title>
+  <link rel="stylesheet" href="../../static/css/sdpi.css" />
+  <style>
+    .sdpi-item-label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .help {
+      color: #888;
+      font-size: 11px;
+      padding: 6px 8px 0 8px;
+    }
+    .cmd-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 4px;
+    }
+    .cmd-row .cmd-index {
+      color: #888;
+      font-size: 11px;
+      min-width: 18px;
+      text-align: right;
+    }
+    .cmd-row input[type="text"] {
+      flex: 1;
+      min-width: 0;
+    }
+    .cmd-row button {
+      flex: 0 0 auto;
+      padding: 0 6px;
+    }
+    .cmd-actions {
+      padding: 4px 8px 0 8px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sdpi-wrapper" style="display: none">
+
+    <div class="sdpi-item" type="group">
+      <div class="sdpi-item-label">Commands</div>
+      <div id="commands-container" class="sdpi-item-value" style="display: block;"></div>
+    </div>
+
+    <div class="cmd-actions">
+      <button id="add-command" type="button">+ add command</button>
+    </div>
+
+    <div class="help">
+      Each command is a shell line executed in the VS Code workspace currently
+      in focus. The chain stops on the first non-zero exit code; the failing
+      command's number is shown on the key as <code>ERR N</code>.
+      Set the key's title in StreamDock's standard key panel.
+    </div>
+  </div>
+  <script src="../../static/utils/common.js"></script>
+  <script src="../../static/action.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{
+  "Actions": [
+    {
+      "UUID": "com.vscode.cmd.run",
+      "Icon": "static/img/App-logo.png",
+      "state": 0,
+      "States": [
+        {
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "Image": "static/img/App-logo.png",
+          "Title": "Run"
+        },
+        {
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "Image": "static/img/icon.png",
+          "Title": "..."
+        },
+        {
+          "TitleAlignment": "bottom",
+          "FontSize": "11",
+          "Image": "static/img/icon.png",
+          "Title": "ERR"
+        }
+      ],
+      "Settings": {
+        "commands": []
+      },
+      "UserTitleEnabled": true,
+      "SupportedInMultiActions": false,
+      "Controllers": ["Keypad"],
+      "Name": "Run Commands",
+      "Tooltip": "Run a user-defined sequence of shell commands in the VS Code workspace currently in focus",
+      "PropertyInspectorPath": "./propertyInspector/run/index.html"
+    }
+  ],
+  "Version": "0.2.0",
+  "Name": "VSCode Cmd Commands",
+  "Icon": "static/img/App-logo.png",
+  "CategoryIcon": "static/img/App-logo.png",
+  "Category": "Dev Tools",
+  "Description": "Run a user-defined chain of shell commands in the VS Code workspace currently in foreground.",
+  "CodePath": "VSCodeCmd.exe",
+  "SDKVersion": 1,
+  "Author": "Tuka",
+  "URL": "",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ]
+}
